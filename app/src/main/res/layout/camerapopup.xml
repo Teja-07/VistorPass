@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llEditViewId"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llCameraId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCameraButtonId"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/gilroy_medium"
+                android:imeOptions="actionNext"
+                android:text="Camera"
+                android:textColor="#94000000"
+                android:textSize="12dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGalleryId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/ivFolderId"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_folder_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/gilroy_medium"
+                android:imeOptions="actionNext"
+
+                android:text="Gallery"
+                android:textColor="#94000000"
+                android:textSize="12dp">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
